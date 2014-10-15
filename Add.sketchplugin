@@ -1,0 +1,25 @@
+// (control shift g)
+
+var target = [[doc currentPage] currentArtboard] || [doc currentPage];
+
+if( !target ) {
+    doc.showMessage("Please select at least either one page or one artboard to add guide.")
+} else {
+
+    // get input from user
+    var input = [doc askForUserInput:@"Format: {v, h}<Space>{digit}" initialValue:"v 0"]
+
+    // extract input
+    var guideOrientation = input.split(" ")[0]
+    var guideCoordinate  = input.split(" ")[1]
+
+    // set guide
+    if( guideOrientation == "v") {
+        [[target verticalRulerData] addGuideWithValue:guideCoordinate]
+    } else if( guideOrientation == "h") {
+        [[target horizontalRulerData] addGuideWithValue:guideCoordinate]
+    } else {
+        [doc showMessage:"Invalid input format for setting guide."]
+    }
+
+}

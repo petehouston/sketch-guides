@@ -1,0 +1,18 @@
+// (control shift r)
+
+var target = [[doc currentPage] currentArtboard] || [doc currentPage]
+
+var countVertical = [[target verticalRulerData] numberOfGuides]
+var countHorizontal = [[target horizontalRulerData] numberOfGuides]
+
+while( countVertical > 0 ) {
+    [[target verticalRulerData] removeGuideAtIndex:0]
+    var countVertical = [[target verticalRulerData] numberOfGuides]
+}
+
+while( countHorizontal > 0 ) {
+    [[target horizontalRulerData] removeGuideAtIndex:0]
+    var countHorizontal = [[target horizontalRulerData] numberOfGuides]
+}
+
+[doc showMessage:"All guides removed."]
