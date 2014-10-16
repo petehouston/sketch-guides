@@ -50,16 +50,16 @@ For example,
 
 ## FAQs
 
-1. **I added a guide but why it does not display on screen?**
+> **I added a guide but why it does not display on screen?**
 
 You need to show the ruler because guides are associated with ruler.
 Via menu **View**, select **Show Ruler**, or simple key combination **Control + R**.
 
-2. **I added a guide and showed the ruler but it still doesn't display?**
+> **I added a guide and showed the ruler but it still doesn't display?**
 
 In this case, it could be in different artboards or pages. Iterate through all pages and artboards to find out which one you added.
 
-3. **Can I change the guide color? I don't like current one.**
+> **Can I change the guide color? I don't like current one.**
 
 Sure, you can. Via menu **Sketch**, select **Preferences**, select tab **Canvas**, pick your guide color at **Color Guide** at the bottom of the dialog.
 
