@@ -30,11 +30,13 @@ $ git clone https://github.com/petehouston/sketch-guides Guides
 The default command bind
 
 * **Control + Shift + G** : to lauch the guide adding input.
+* **Control + Shift + H** : to add a horizontal guide.
+* **Control + Shift + V** : to add a vertical guide.
 * **Control + Shift + R** : to remove all guides on current page or current artboard.
 
 ### Syntax for adding guides
 
-The format syntax is:
+When using **Commands** dialog, you need to input with a format:
 
 ```
 {v, h}<Space>{digit}
@@ -47,6 +49,8 @@ For example,
 
 * Add a vertical guide at 150px: `v 150`
 * Add a horizontal guide at 50px: `h 50`
+
+However, if you use **Add Horizontal** or **Add Vertical**, simply input a coordinate number.
 
 ## FAQs
 

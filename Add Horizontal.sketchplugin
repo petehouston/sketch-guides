@@ -1,0 +1,19 @@
+// (control shift h)
+
+var target = [[doc currentPage] currentArtboard] || [doc currentPage];
+
+if( !target ) {
+    doc.showMessage("Please select at least either one page or one artboard to add guide.")
+} else {
+
+    // get input from user
+    var input = [doc askForUserInput:@"Coordinate for horizontal guide:" initialValue:"0"]
+
+    // set guide
+    if( ! isNaN(input) ) {
+        [[target horizontalRulerData] addGuideWithValue:input]
+    } else {
+        [doc showMessage:"Invalid coordinate number for setting guide."]
+    }
+
+}
